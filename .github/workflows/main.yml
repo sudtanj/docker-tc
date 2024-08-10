@@ -29,8 +29,8 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          build-args: ARCH=amd64,arm64
-          file: Dockerfile
-          platforms: linux/amd64,linux/arm64
+          build-args: ARCH=arm64
+          file: Dockerfile-arm64
+          platforms: linux/arm64
           push: true
           tags: sudtanj/docker-tc:latest
